@@ -1,0 +1,30 @@
+@import url("https://use.typekit.net/utn1sfl.css");
+
+:root {
+  --font-serif-minion: 'Minion Pro', serif;
+  --font-serif-clarendon: clarendon-text-pro, serif;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-blue-grey: #bdccd4;
+  --color-brown-grey: #969696;
+  --color-light-pink: #E27c9380;
+  --color-navy: #232c3d;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-serif-clarendon);
+}
+
+.page-header__nav-item {
+  max-width: 20px;
+}
