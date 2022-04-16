@@ -146,6 +146,34 @@ a {
 
 
 
+.author-icon--lg {
+  display: inline-block;
+  background-color: var(--color-light-pink);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-icon__initials--lg {
+  font-family: var(--font-serif-clarendon);
+  font-weight: 800;
+  font-size: 33px;
+  color: black;
+  display: table-cell;
+  vertical-align: middle; 
+  text-align: center;
+  text-decoration: none;
+  height: 80px;
+  width: 80px;  
+}
+
+.author-container--lg {
+  display: flex;
+  text-align: center;
+}
+
+
+
+
 
 .component {
   background-color: var(--color-blue-grey);
@@ -290,6 +318,10 @@ a {
   letter-spacing: .1em;
   margin-top: 25px;
   margin-bottom: 0;
+}
+
+.feat-columns__title:hover {
+  text-decoration: underline;
 }
 
 .feat-columns__column-author {
