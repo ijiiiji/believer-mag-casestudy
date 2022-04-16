@@ -7,20 +7,210 @@
 	<link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-	<h1>Web Components</h1>
-
-	<h2>Typography Defaults</h2>
+	<h1 class="title">Web Components</h1>
 
 	<article class="component">
-		<h3 class="component__name">Header</h3>
-		<img 
-			srcset="img/header.png 2x"
-			src="img/header.png"
-			alt=""
-		>
+		<h3 class="component__name">Main Nav</h3>
+		<img class="component__img" src="img/page-header__nav.png" srcset="img/page-header__nav.png 2x" alt="">
 	</article>
 	<div class="component__code">
-		Code Goes Here
+		<nav class="page-header__nav">
+			<a href="#!"><img class="page-header__nav-item" src="../img/b.png" width="30" alt="Home"></a>
+			<a href="#!"><img class="page-header__nav-item" src="../img/lines.png" width="30" alt="Home"></a>
+			<a href="#!"><img class="page-header__nav-item" src="../img/mag.png" width="30" alt="Home"></a>
+			<a href="#!"><img class="page-header__nav-item" src="../img/log.png" width="30" alt="Home"></a>
+			<a href="#!"><img class="page-header__nav-item" src="../img/bag.png" width="30" alt="Home"></a>
+			<a href="#!"><img class="page-header__nav-item" src="../img/search.png" width="30" alt="Home"></a>
+		</nav>
+	</div>
+
+	<article class="component">
+		<h3 class="component__name">Featured</h3>
+		<img class="component__img" src="img/feat-top.png" srcset="img/feat-top.png 2x" alt="">
+	</article>
+	<div class="component__code">
+		<section class="feat-top">
+			<article class="feat-top__titles">
+				<h5 class="feat-top__heading">Featured</h5>
+					<div class="feat-top__titles-list">
+						<div class="feat-top__titles-piece">
+							<a href="#!"><h3 class="feat-top__titles-piece-title">An Interview with Andrew Garfield</h3>
+							<h5 class="feat-top__titles-piece-author">By Esmé Weijun Wang</h5></a>
+						</div>
+						<div class="feat-top__titles-piece">
+							<a href="#!"><h3 class="feat-top__titles-piece-title">Stuck</h3>
+							<h5 class="feat-top__titles-piece-author">By Amy Reardon</h5></a>
+						</div>
+						<div class="feat-top__titles-piece">
+							<a href="#!"><h3 class="feat-top__titles-piece-title">La Folía</h3>
+							<h5 class="feat-top__titles-piece-author">By Vivian Blaxell</h5></a>
+						</div>
+						<div class="feat-top__titles-piece">
+							<a href="#!"><h3 class="feat-top__titles-piece-title">An Interview with Percival Everett</h3>
+							<h5 class="feat-top__titles-piece-author">By James Yeh</h5></a>
+						</div>
+					</div>
+			</article>
+			<a href="#!"><article class="feat-top__slider">
+				<img class="feat-top__slider-img" src="../img/slider.png" alt="children's group maypole dancing 1900-1910 Queensland">
+				<div class="feat-top__slider-text">
+					<p class="feat-top__slider-snipet">Children's group maypole dancing. 1900-1910. Queensland.</p>
+					<h2 class="feat-top__slider-title">La Folía</h2>
+					<div class="author-container">
+						<div class="author-icon-container">
+							<div class="author-icon">
+			  					<p class="author-icon__initials">VB</p>
+							</div>
+						</div>
+						<h5 class="feat-top__slider-author">By Vivian Blaxell</h5>
+					</div>
+					<a href="#!" class="more">More</a>
+				</div>
+			</article></a>
+		</section>
+	</div>
+
+	<article class="component">
+		<h3 class="component__name">Carousel</h3>
+		<img class="component__img" src="img/carousel.png" srcset="img/carousel.png 2x" alt="">
+	</article>
+
+	<div class="component__code">
+		<section class="carousel">
+			<h2 class="carousel__heading">The Latest</h2>
+			<div class="carousel__list">
+				<a href="#!"><article class="carousel__piece">
+					<div id="category-container">
+						<img class="carousel__img" src="../img/art1.png" alt="">
+						<p class="carousel__category">Subject</p>
+					</div>
+					<h3 class="carousel__title">Title Goes Here</h3>
+					<h5 class="carousel__author">JS Wu</h5>
+				</article></a>
+				<a href="#!"><article class="carousel__piece">
+					<div id="category-container">
+						<img class="carousel__img" src="../img/art4.png" alt="">
+						<p class="carousel__category">Subject</p>
+					</div>
+					<h3 class="carousel__title">Title Goes Here</h3>
+					<h5 class="carousel__author">Peter Orner</h5>
+				</article></a>
+				<a href="#!"><article class="carousel__piece">
+					<div id="category-container">
+						<img class="carousel__img" src="../img/art5.png" alt="">
+						<p class="carousel__category">Subject</p>
+					</div>
+					<h3 class="carousel__title">Title Goes Here</h3>
+					<h5 class="carousel__author">Amber Husain</h5>
+				</article></a>
+				<a href="#!"><article class="carousel__piece">
+					<div id="category-container">
+						<img class="carousel__img" src="../img/art6.png" alt="">
+						<p class="carousel__category">Subject</p>
+					</div>
+					<h3 class="carousel__title">Title Goes Here</h3>
+					<h5 class="carousel__author">Angie Kang</h5>
+				</article></a>
+				<a href="#!"><article class="carousel__piece">
+					<div id="category-container">
+						<img class="carousel__img" src="../img/art3.png" alt="">
+						<p class="carousel__category">Subject</p>
+					</div>
+					<h3 class="carousel__title">Title Goes Here</h3>
+					<h5 class="carousel__author">JS Wu</h5>
+				</article></a>
+				<a href="#!"><article class="carousel__piece">
+					<div id="category-container">
+						<img class="carousel__img" src="../img/art2.png" alt="">
+						<p class="carousel__category">Subject</p>
+					</div>
+					<h3 class="carousel__title">Title Goes Here</h3>
+					<h5 class="carousel__author">Madeleine Watts</h5>
+				</article></a>
+			</div>
+		</section>
+	</div>
+
+	<article class="component">
+		<h3 class="component__name">See More</h3>
+		<img class="component__img" src="img/see-more.png" srcset="img/see-more.png 2x" alt="">
+	</article>
+	<div class="component__code">
+		<section class="see-more">
+			<a class="see-more__link" href="#!">See More...</a>
+			<div class="see-more__list">
+				<a href="#!"><p class="see-more__list-item">Interviews</p></a>
+				<a href="#!"><p class="see-more__list-item">Schemas</p></a>
+				<a href="#!"><p class="see-more__list-item">Comics</p></a>
+				<a href="#!"><p class="see-more__list-item">The Field</p></a>
+			</div>
+		</section>
+	</div>
+
+	<article class="component">
+		<h3 class="component__name">Featured Columns</h3>
+		<img class="component__img" src="img/feat-columns.png" srcset="img/feat-columns.png 2x" alt="">
+	</article>
+	<div class="component__code">
+		<section class="feat-columns">
+			<h2 class="feat-columns__heading">Featured Columns</h2>
+			<section class="feat-columns__list">
+				<article class="feat-columns__column">
+					<div class="author-icon-container">
+						<div class="author-icon">
+		  					<p class="author-icon__initials">VB</p>
+						</div>
+					</div>
+					<div class="feat-columns__column-text">
+						<h4 class="feat-columns__title"><span class="hover-underliner">
+							Stuff I've Been Reading</span>
+						</h4>
+						<p class="feat-columns__column-author">Nick Hornby
+						</p>
+						<h5 class="feat-columns__column-moto">Established in 2003 and still going strong
+						</h5>
+						<a href="#!" class="more">More
+						</a>
+					</div>
+				</article>
+				<article class="feat-columns__column">
+					<div class="author-icon-container">
+						<div class="author-icon">
+		  					<p class="author-icon__initials">VB</p>
+						</div>
+					</div>
+					<div class="feat-columns__column-text">
+						<h4 class="feat-columns__title"><span class="hover-underliner">
+							Stuff I've Been Reading</span>
+						</h4>
+						<p class="feat-columns__column-author">Nick Hornby
+						</p>
+						<h5 class="feat-columns__column-moto">Established in 2003 and still going strong
+						</h5>
+						<a href="#!" class="more">More
+						</a>
+					</div>
+				</article>
+				<article class="feat-columns__column">
+					<div class="author-icon-container">
+						<div class="author-icon">
+		  					<p class="author-icon__initials">VB</p>
+						</div>
+					</div>
+					<div class="feat-columns__column-text">
+						<h4 class="feat-columns__title"><span class="hover-underliner">
+							Stuff I've Been Reading</span>
+						</h4>
+						<p class="feat-columns__column-author">Nick Hornby
+						</p>
+						<h5 class="feat-columns__column-moto">Established in 2003 and still going strong
+						</h5>
+						<a href="#!" class="more">More
+						</a>
+					</div>
+				</article>
+			</section>
+		</section>
 	</div>
 
 </body>
