@@ -8,6 +8,7 @@
   --color-blue-grey: #bdccd4;
   --color-brown-grey: #969696;
   --color-dark-grey: #7f7f7f;
+  --color-lighter-pink: #e2739333;
   --color-light-pink: #E27c9380;
   --color-navy: #232c3d;
   --color-light-brown: #745f64;
@@ -49,6 +50,39 @@ h4 {
   margin-top: 25px;
   margin-bottom: 0;
 }
+
+
+
+.title {
+  text-align: center;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-blue-grey);
+  padding: 50px;
+}
+
+.component__name {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+#add-space {
+  height: 110px;
+}
+
+#center-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+
 
 .page-header__nav {
   display: flex;
@@ -106,7 +140,6 @@ h4 {
 
 .feat-top__slider {
   display: flex;
-  width: 70%;
 }
 
 .feat-top__slider-text {
@@ -219,25 +252,6 @@ h4 {
 
 
 
-.component {
-  background-color: var(--color-blue-grey);
-  padding: 50px;
-}
-
-.component__code {
-  padding: 50px;
-}
-
-.component__name {
-  font-style: italic;
-  font-size: 1.2em;
-}
-
-
-
-
-
-
 .more {
   text-transform: uppercase;
   text-decoration: none;
@@ -256,6 +270,10 @@ h4 {
 
 
 
+.carousel {
+  border: 2px solid blue;
+  max-width: 60%;
+}
 
 .carousel__heading {
   padding-left: 8px;
@@ -264,7 +282,6 @@ h4 {
 .carousel__list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 75%;
 }
 
 .carousel__piece {
@@ -400,10 +417,21 @@ h4 {
 .this-issue {
   display: flex;
   justify-content: center;
+  background-color: var(--color-lighter-pink);
 }
 
 .this-issue__subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0px 35px 35px 35px;
+  position: relative;
+  top: -60px;
+}
+
+.this-issue__text {
+  position: relative;
+  top: -60px;
 }
 
 .this-issue__piece {
@@ -411,13 +439,11 @@ h4 {
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 1px solid orange;
 }
 
 .this-issue__piece-title {
-  border: 1px solid green;
   padding-top: 3px;
-  padding-right: 100px;
+  padding-right: 30px;
   margin: 0;
 }
 
@@ -426,3 +452,29 @@ h4 {
   font-size: 15px;
   margin: 0;
 }
+
+
+
+
+
+
+.button {
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: .2em;
+  font-size: .7em;
+  border: 2.5px solid black;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 135px;
+  margin: 50px;
+  box-shadow: -5px 5px var(--color-light-pink) !important;
+}
+
+.button:hover {
+  background-color: var(--color-light-pink);
+  box-shadow: -5px 5px black !important;
+}
+
