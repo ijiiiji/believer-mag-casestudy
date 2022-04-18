@@ -34,6 +34,22 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-family: var(--font-serif-clarendon);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
 .page-header__nav {
   display: flex;
   flex-direction: column;
@@ -221,6 +237,7 @@ a {
 
 
 
+
 .more {
   text-transform: uppercase;
   text-decoration: none;
@@ -241,10 +258,6 @@ a {
 
 
 .carousel__heading {
-  font-family: var(--font-serif-clarendon);
-  font-size: 1.2em;
-  text-transform: uppercase;
-  padding-bottom: 15px;
   padding-left: 8px;
 }
 
@@ -330,12 +343,6 @@ a {
 
 
 
-.feat-columns__heading {
-  font-family: var(--font-serif-clarendon);
-  font-size: 1.2em;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-}
 
 .feat-columns__list {
   display: flex;
@@ -344,15 +351,6 @@ a {
 .feat-columns__column {
   max-width: 140px;
   margin-right: 20px;
-}
-
-.feat-columns__title {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: .1em;
-  margin-top: 25px;
-  margin-bottom: 0;
 }
 
 .feat-columns__title:hover {
@@ -393,4 +391,38 @@ a {
 
 .contributors__list {
   margin-bottom: 25px;
+}
+
+
+
+
+
+.this-issue {
+  display: flex;
+  justify-content: center;
+}
+
+.this-issue__subscribe {
+  padding: 0px 35px 35px 35px;
+}
+
+.this-issue__piece {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid orange;
+}
+
+.this-issue__piece-title {
+  border: 1px solid green;
+  padding-top: 3px;
+  padding-right: 100px;
+  margin: 0;
+}
+
+.this-issue__piece-author {
+  font-family: var(--font-serif-clarendon);
+  font-size: 15px;
+  margin: 0;
 }
