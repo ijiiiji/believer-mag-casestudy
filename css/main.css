@@ -53,6 +53,8 @@ h4 {
 
 
 
+
+
 .title {
   text-align: center;
 }
@@ -80,6 +82,7 @@ h4 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 
 
 
@@ -271,17 +274,17 @@ h4 {
 
 
 .carousel {
-  border: 2px solid blue;
-  max-width: 60%;
+  max-width: 900px;
 }
 
 .carousel__heading {
-  padding-left: 8px;
+  padding-left: 25px;
 }
 
 .carousel__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .carousel__piece {
@@ -367,7 +370,7 @@ h4 {
 
 .feat-columns__column {
   max-width: 140px;
-  margin-right: 20px;
+  margin-right: 45px;
 }
 
 .feat-columns__title:hover {
@@ -471,6 +474,7 @@ h4 {
   width: 135px;
   margin: 50px;
   box-shadow: -5px 5px var(--color-light-pink) !important;
+  transition: box-shadow 300ms,background 300ms,transform 300ms;
 }
 
 .button:hover {
