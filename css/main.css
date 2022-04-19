@@ -83,6 +83,27 @@ h4 {
   padding-bottom: 30px;
 }
 
+.button {
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: .2em;
+  font-size: .7em;
+  border: 2.5px solid black;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 135px;
+  margin: 50px;
+  box-shadow: -5px 5px var(--color-light-pink) !important;
+  transition: box-shadow 300ms,background 300ms,transform 300ms;
+}
+
+.button:hover {
+  background-color: var(--color-light-pink);
+  box-shadow: -5px 5px black !important;
+}
+
 
 
 
@@ -273,6 +294,8 @@ h4 {
 
 
 
+
+
 .carousel {
   max-width: 900px;
 }
@@ -289,6 +312,10 @@ h4 {
 
 .carousel__piece {
   padding: 8px;
+}
+
+.carousel__piece:hover {
+  cursor: pointer;
 }
 
 .carousel__img {
@@ -331,6 +358,8 @@ h4 {
 
 
 
+
+
 .see-more {
   display: flex;
   flex-direction: column;
@@ -345,6 +374,7 @@ h4 {
   font-size: 12px;
   color: var(--color-light-brown);
   padding-left: 5px;
+  letter-spacing: .1em;
 }
 
 .see-more__list {
@@ -358,6 +388,7 @@ h4 {
   font-weight: 600;
   padding: 5px;
   margin-right: 10px;
+  letter-spacing: .2em;
 }
 
 
@@ -395,6 +426,8 @@ h4 {
 
 
 
+
+
 .contributors__heading {
   font-family: var(--font-serif-clarendon);
   font-size: 1.2em;
@@ -412,6 +445,7 @@ h4 {
 .contributors__list {
   margin-bottom: 25px;
 }
+
 
 
 
@@ -459,26 +493,41 @@ h4 {
 
 
 
+.past-issues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
+.past-issues__heading {
+  padding-right: 10px;
+  width: 100px;
+}
 
-.button {
-  background-color: white;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: .2em;
-  font-size: .7em;
-  border: 2.5px solid black;
+.past-issues__list {
+  display: flex;
+}
+
+.past-issues__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.past-issues__list-item:hover {
+  cursor: pointer;
+}
+
+.past-issues__list-date {
+  width: 100px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 135px;
-  margin: 50px;
-  box-shadow: -5px 5px var(--color-light-pink) !important;
-  transition: box-shadow 300ms,background 300ms,transform 300ms;
+  text-transform: uppercase;
+  font-size: .8em;
+  margin-bottom: 0;
 }
 
-.button:hover {
-  background-color: var(--color-light-pink);
-  box-shadow: -5px 5px black !important;
-}
 
