@@ -661,6 +661,10 @@ input[type=submit] {
   letter-spacing: .2em;
 }
 
+.footer__nav-lists-list-item:hover {
+  cursor: pointer;
+}
+
 .footer__nav-lists-list-title {
   font-size: 12px;
   text-transform: uppercase;
