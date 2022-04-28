@@ -496,7 +496,8 @@ ul {
 }
 
 .feat-columns__column {
-  margin-right: 35px;
+  margin-right: 45px;
+  width: 150px;
 }
 
 .feat-columns__column-text {
