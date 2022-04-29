@@ -501,6 +501,9 @@ ul {
 .feat-columns__column {
   margin-right: 45px;
   width: 150px;
+}
+
+.feat-columns__column:hover {
   cursor: pointer;
 }
 
@@ -549,6 +552,10 @@ ul {
   font-style: italic;
   margin: 0;
   padding-left: 8px;
+}
+
+.contributors__contributor:hover {
+  cursor: pointer;
 }
 
 .contributors__list {
