@@ -87,7 +87,7 @@ ul {
 
 
 
-#center-container {
+.center-container {
   display: flex;
   justify-content: center;
 }
@@ -415,7 +415,7 @@ ul {
   font-style: italic;
 }
 
-#category-container {
+.category-container {
   width: 270px;
   position: relative;
 }
