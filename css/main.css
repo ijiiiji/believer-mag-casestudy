@@ -554,7 +554,7 @@ ul {
   padding-left: 8px;
 }
 
-.contributors__contributor:hover {
+.contributors__contributor-name:hover {
   cursor: pointer;
 }
 
