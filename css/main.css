@@ -76,7 +76,7 @@ ul {
   font-size: 1.2em;
 }
 
-#add-space {
+.add-space {
   height: 110px;
 }
 
@@ -501,6 +501,7 @@ ul {
 .feat-columns__column {
   margin-right: 45px;
   width: 150px;
+  cursor: pointer;
 }
 
 .feat-columns__column-text {
