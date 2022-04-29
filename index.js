@@ -31,4 +31,3 @@ const hideFeatures = () => {
         slider[i].classList.add('hidden');
     }
 }
-
