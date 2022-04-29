@@ -167,7 +167,10 @@ ul {
 
 .author-container--sm {
   display: flex;
+  align-items: center;
+  margin: 0;
   width: 250px;
+  height: 50px;
 }
 
 
@@ -543,7 +546,7 @@ ul {
 .contributors__contributor-name {
   color: var(--color-brown-grey);
   font-style: italic;
-  margin-top: 7px;
+  margin: 0;
   padding-left: 8px;
 }
 
