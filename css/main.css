@@ -59,6 +59,11 @@ ul {
 }
 
 
+
+/** Components **/
+
+
+
 .title {
   text-align: center;
 }
@@ -84,6 +89,10 @@ ul {
   display: flex;
   flex-direction: column;
 }
+
+
+
+/** General **/
 
 
 
@@ -142,9 +151,6 @@ ul {
   align-items: center;
 }
 
-
-
-
 .author-icon--sm {
   display: inline-block;
   background-color: var(--color-light-pink);
@@ -173,9 +179,6 @@ ul {
   height: 50px;
 }
 
-
-
-
 .author-icon--lg {
   display: inline-block;
   background-color: var(--color-light-pink);
@@ -201,8 +204,6 @@ ul {
   justify-content: center;
 }
 
-
-
 .more {
   text-transform: uppercase;
   text-decoration: none;
@@ -216,6 +217,7 @@ ul {
 
 
 
+/** Page Header **/
 
 
 
@@ -264,10 +266,6 @@ ul {
   cursor: pointer;
 }
 
-
-
-
-
 .parallax {
   background-image: url("../img/parallax3.png");
   height: 600px;
@@ -284,6 +282,8 @@ ul {
 }
 
 
+
+/** Featured Top **/
 
 
 
@@ -376,7 +376,7 @@ ul {
 
 
 
-
+/** See More **/
 
 
 
@@ -446,6 +446,8 @@ ul {
 
 
 
+/** See More **/
+
 
 
 .see-more {
@@ -482,6 +484,8 @@ ul {
 
 
 
+/** Columns/Contributors **/
+
 
 
 .columns-contributors {
@@ -494,6 +498,8 @@ ul {
 }
 
 
+
+/** Featured Columns **/
 
 
 
@@ -544,6 +550,7 @@ ul {
 
 
 
+/** Contributors **/
 
 
 
@@ -576,6 +583,7 @@ ul {
 
 
 
+/** This Issue **/
 
 
 
@@ -627,6 +635,9 @@ ul {
 
 
 
+/** Past Issues **/
+
+
 
 .past-issues {
   display: flex;
@@ -671,6 +682,7 @@ ul {
 
 
 
+/** Footer **/
 
 
 
@@ -836,6 +848,8 @@ input[type=submit] {
 }
 
 
+
+/** Media Rules **/
 
 
 
