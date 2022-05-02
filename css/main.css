@@ -376,7 +376,7 @@ ul {
 
 
 
-/** See More **/
+/** Carousel **/
 
 
 
@@ -456,7 +456,7 @@ ul {
   justify-content: center;
   background-color: var(--color-light-pink);
   height: 100px;
-  padding-left: 19%;
+  padding-left: 18%;
   margin-top: 30px;
 }
 
