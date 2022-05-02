@@ -221,6 +221,7 @@ ul {
 
 .page-header__nav {
   position: fixed;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
@@ -229,6 +230,11 @@ ul {
 
 .page-header__nav-item {
   margin: 4px;
+}
+
+.page-header__nav-sm {
+  display: none;
+  z-index: 1;
 }
 
 .page-header__donate {
@@ -264,12 +270,17 @@ ul {
 
 .parallax {
   background-image: url("../img/parallax3.png");
-  min-height: 600px; 
+  height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+}
+
+.parallax__logo {
+  width: 70%;
+  height: auto;
 }
 
 
@@ -351,10 +362,13 @@ ul {
 
 .feat-top__slider-img {
   max-width: 400px;
+  border: 1px solid green;
 }
 
 .feat-top__slider-snipet {
   font-size: 18px;
+  max-width: 440px;
+  border: 1px solid red;
 }
 
 .feat-top__slider-author {
@@ -372,11 +386,13 @@ ul {
   margin-top: 60px;
   width: 900px;
   margin-bottom: 25px;
+  border: 1px solid green;
 }
 
 .carousel__heading {
   padding-left: 8px;
   margin: 0;
+  border: 1px solid red;
 }
 
 .carousel__list {
@@ -487,10 +503,12 @@ ul {
 
 .feat-columns {
   margin-top: 50px;
+  border: 1px solid green;
 }
 
 .feat-columns__heading {
   margin-top: 0;
+  border: 1px solid red;
 }
 
 .feat-columns__list {
@@ -572,6 +590,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--color-lighter-pink);
+  border: 1px solid red;
 }
 
 .this-issue__subscribe {
@@ -581,11 +600,19 @@ ul {
   padding: 0px 60px 35px 0px;
   position: relative;
   top: -60px;
+  border: 1px solid green;
+}
+
+.this-issue__subscribe-img {
+  height: 450px;
+  width: auto;
+  border: 1px solid purple;
 }
 
 .this-issue__text {
   position: relative;
   top: -60px;
+  border: 1px solid blue;
 }
 
 .this-issue__piece {
@@ -593,18 +620,23 @@ ul {
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
+  border: 1px solid blue;
 }
 
 .this-issue__piece-title {
   padding-top: 3px;
   padding-right: 30px;
   margin: 0;
+  border: 1px solid red;
 }
 
 .this-issue__piece-author {
   font-family: var(--font-serif-clarendon);
   font-size: 15px;
   margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid yellow;
 }
 
 
@@ -626,6 +658,8 @@ ul {
 
 .past-issues__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .past-issues__list-item {
@@ -656,7 +690,8 @@ ul {
 
 .footer {
   background-color: var(--color-navy);
-  padding: 20px 120px 20px 120px
+  padding: 20px 120px 20px 120px;
+  border: 1px solid green;
 }
 
 .footer__newsletter {
@@ -670,6 +705,7 @@ ul {
   font-size: 22px;
   font-family: var(--font-serif-minion);
   letter-spacing: .01em;
+  margin-right: 40px;
 }
 
 .footer__newsletter-form {
@@ -679,7 +715,7 @@ ul {
 }
 
 input[type=email] {
-  min-width: 350px;
+  max-width: 350px;
   height: auto;
   border-radius: 0;
   border: none;
@@ -731,12 +767,15 @@ input[type=submit] {
 
 .footer__nav-lists {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid green;
 }
 
 .footer__nav-lists-list {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0;
+  padding-right: 60px;
+  padding-bottom: 20px;
 }
 
 .footer__nav-lists-list-items {
@@ -769,6 +808,8 @@ input[type=submit] {
 .footer__nea {
   display: flex;
   align-items: flex-end;
+  padding-right: 65px;
+  border: 1px solid red;
 }
 
 .footer__nea-logo {
@@ -790,14 +831,16 @@ input[type=submit] {
 
 .footer__end {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
-  padding-top: 75px;
+  padding-top: 5%;
 }
 
 .footer__publisher {
   font-size: 14px;
-  max-width: 570px;
-  padding-left: 65px;
+  max-width: 500px;
+  border: 1px solid green;
+  padding-top: 20px;
 }
 
 .footer__publisher p {
@@ -810,4 +853,194 @@ input[type=submit] {
   color: black;
 }
 
+
+
+
+
+@media (max-width: 362px) {
+  .feat-top__slider-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .this-issue__piece {
+    flex-direction: column;
+  }
+
+  .see-more {
+    height: 280px;
+  }
+
+  .see-more__link {
+    padding-bottom: 20px;
+  }
+
+  .see-more__list {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 715px) {
+  .footer {
+    padding: 20px 50px 20px 50px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .feat-top__titles {
+    display: none;
+  }
+
+  .feat-top__slider {
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+
+  .this-issue {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .this-issue__subscribe {
+    padding: 0;
+  }
+
+  .this-issue__text {
+    max-width: 80%
+  }
+
+}
+
+@media (min-width: 0px) and (max-width: 1080px) {
+  .past-issues {
+    flex-direction: column;
+  }
+
+  .past-issues__list {
+    margin-bottom: 35px;
+  }
+
+  .past-issues__heading {
+    text-align: center;
+  }
+
+  .footer__nav {
+    flex-wrap: wrap;
+  }
+
+  .footer__nav-lists {
+    margin-top: 15px;
+  }
+
+  .footer__newsletter {
+    flex-direction: column;
+  }
+
+  .footer__newsletter-form {
+    margin-bottom: 15px;
+  }
+}
+
+
+@media (max-width: 1052px) {
+    .page-header__donate {
+      display: none;
+    }
+}
+
+@media (max-width: 878px) {
+  .carousel__list {
+    justify-content: center;
+  }
+
+  .carousel__heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .feat-columns {
+    text-align: center;
+  }
+
+  .feat-columns__heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .feat-columns__list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .feat-columns__column {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .columns-contributors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid blue;
+  }
+
+  .contributors {
+    border: 1px solid red;
+    width: 190px;
+  }
+
+  .contributors__list {
+    border: 1px solid green;
+  }
+
+  .contributors__contributor-name {
+    margin: 0;
+    padding: 0;
+    border: 1px solid yellow;
+  }
+
+}
+
+@media (max-width: 740px) {
+    .feat-top__slider {
+      flex-direction: column;  
+      padding-left: 10%; 
+      padding-right: 10%;   
+    }
+
+    .feat-top__slider-text {
+      margin-left: 0;
+    }
+
+    .feat-top__slider-img {
+      margin-left: 0;
+    }
+
+    .feat-top__slider-snipet {
+      max-width: 380px;
+    }
+
+    .feat-top__slider-title {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+    .page-header__nav {
+      display: none;
+    }
+
+    .page-header__nav-sm {
+      display: block;
+      position: fixed;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+}
 
