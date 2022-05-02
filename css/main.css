@@ -362,13 +362,11 @@ ul {
 
 .feat-top__slider-img {
   max-width: 400px;
-  border: 1px solid green;
 }
 
 .feat-top__slider-snipet {
   font-size: 18px;
   max-width: 440px;
-  border: 1px solid red;
 }
 
 .feat-top__slider-author {
@@ -386,13 +384,11 @@ ul {
   margin-top: 60px;
   width: 900px;
   margin-bottom: 25px;
-  border: 1px solid green;
 }
 
 .carousel__heading {
   padding-left: 8px;
   margin: 0;
-  border: 1px solid red;
 }
 
 .carousel__list {
@@ -503,12 +499,10 @@ ul {
 
 .feat-columns {
   margin-top: 50px;
-  border: 1px solid green;
 }
 
 .feat-columns__heading {
   margin-top: 0;
-  border: 1px solid red;
 }
 
 .feat-columns__list {
@@ -590,7 +584,6 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--color-lighter-pink);
-  border: 1px solid red;
 }
 
 .this-issue__subscribe {
@@ -600,19 +593,15 @@ ul {
   padding: 0px 60px 35px 0px;
   position: relative;
   top: -60px;
-  border: 1px solid green;
 }
 
 .this-issue__subscribe-img {
   height: 450px;
-  width: auto;
-  border: 1px solid purple;
 }
 
 .this-issue__text {
   position: relative;
   top: -60px;
-  border: 1px solid blue;
 }
 
 .this-issue__piece {
@@ -620,14 +609,12 @@ ul {
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
-  border: 1px solid blue;
 }
 
 .this-issue__piece-title {
   padding-top: 3px;
   padding-right: 30px;
   margin: 0;
-  border: 1px solid red;
 }
 
 .this-issue__piece-author {
@@ -636,7 +623,6 @@ ul {
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  border: 1px solid yellow;
 }
 
 
@@ -691,7 +677,6 @@ ul {
 .footer {
   background-color: var(--color-navy);
   padding: 20px 120px 20px 120px;
-  border: 1px solid green;
 }
 
 .footer__newsletter {
@@ -769,7 +754,6 @@ input[type=submit] {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid green;
 }
 
 .footer__nav-lists-list {
@@ -809,7 +793,6 @@ input[type=submit] {
   display: flex;
   align-items: flex-end;
   padding-right: 65px;
-  border: 1px solid red;
 }
 
 .footer__nea-logo {
@@ -839,7 +822,6 @@ input[type=submit] {
 .footer__publisher {
   font-size: 14px;
   max-width: 500px;
-  border: 1px solid green;
   padding-top: 20px;
 }
 
@@ -861,6 +843,20 @@ input[type=submit] {
   .feat-top__slider-img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 450px) {
+   .this-issue__subscribe-img {
+    width: 100%;
+    height: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .this-issue__subscribe {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -984,22 +980,15 @@ input[type=submit] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid blue;
   }
 
   .contributors {
-    border: 1px solid red;
     width: 190px;
-  }
-
-  .contributors__list {
-    border: 1px solid green;
   }
 
   .contributors__contributor-name {
     margin: 0;
     padding: 0;
-    border: 1px solid yellow;
   }
 
 }
